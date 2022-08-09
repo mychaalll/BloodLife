@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #b45b5b ,#fa4783) repeat;
+
+}
+.container{
+    padding-top: 10px;
+    max-width:50%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    margin-top: 180px;
+    overflow-x: scroll;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    right: 0px;
+    bottom: 90px; */
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    /* position: relative;
+    bottom: 40px;
+    margin-left: 150px;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    padding-top: 90px; */
+}
+  .container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.content{
+  margin-top: 5%;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .content .error-message, .error{
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    /* margin-left: 160px; */
+}
+  .user-details .input-box .details, .user-details .text-area .details{
+    display: block;
+    font-weight: 500;
+    /* font-size: 18px;
+    margin-bottom: 5px; */
+    margin-left: 20px;
+}
+.user-details .input-box input, .user-details .input-box select{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .text-area{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.user-details .comments{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    padding-top: 10px;
+}
+form .button{
+    height: 45px;
+    margin: 20px 0;
+}
+  form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(90deg, rgba(78,172,214,1) 29%, rgba(0,31,255,1) 100%);
+}
+  form .button input:hover{
+   /* transform: scale(0.99); */
+   background: linear-gradient(-90deg, rgba(78,172,214,1) 29%, rgba(0,31,255,1) 100%);
+}
+@media(max-width: 584px){
+    .container{
+     max-width: 100%;
+   }
+   form .user-details .input-box{
+       margin-bottom: 15px;
+       width: 100%;
+     }
+     .content form .user-details{
+       max-height: 300px;
+       overflow-y: scroll;
+     }
+     .user-details::-webkit-scrollbar{
+       width: 5px;
+    }
+    }
+    @media(max-width: 459px){
+     .container .content .category{
+       flex-direction: column;
+    }
+}

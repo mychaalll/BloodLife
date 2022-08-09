@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, 'Poppins' 'Open Sans' , 'Zilla Slab', 'Roboto Serif', sans-serif;
+  font-family: 'Bebas Neue', 'Patua One', cursive;
+}
+section{
+  position:relative;
+  width:100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:flex-start; */
+  justify-content: center;
+  align-items: center;
+  /* Created with https://www.css-gradient.com */
+  background: #FF9C9C;
+  background: -webkit-linear-gradient(bottom, #FF9C9C, #7A95FF);
+  background: -moz-linear-gradient(bottom, #FF9C9C, #7A95FF);
+  background: linear-gradient(to top, #FF9C9C, #7A95FF);
+  }
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  background-color: rgba(15, 13, 13, 0.5);
+  
+  z-index: 10000;
+}
+
+nav img {
+  position: absolute;
+  width: 82px;
+  height: 81px;
+  left: 70px;
+  top: 0.8vh;
+  border-radius: 62px;
+  border: 2px solid #000000;
+  margin-bottom: 50px;
+}
+
+.navigation{
+  flex: 1;
+  position: absolute;
+  right: 10vh;
+  top: 25%;
+  width: 60vw;
+  height: 12vh;
+}
+
+.navigation ul{
+float: right;
+}
+
+.navigation ul li{
+  list-style: none;
+  display: inline-block;
+
+  line-height: 40vh;
+
+  margin-right: 3vw;
+}
+
+header nav .navigation ul li a{
+  text-decoration: none;
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 24px;
+  color: #ffffff;
+
+  display: block;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  bottom: 10px;
+}
+
+nav .navigation ul li a:hover{
+  color: #ff7b71;
+}
+
+nav .navigation ul li::after{
+  content: '';
+  width: 0%;
+  height: 4px;
+  border-radius: 5px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  position: relative;
+  bottom: 12px;
+}
+
+nav .navigation ul li:hover::after{
+ width: 100%;
+}
+
+#button {
+  position: relative;
+  margin-left: 2vw;
+  padding: 9px 25px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#button:hover{
+  background-color: #ff3c00;
+}
+
+label{
+    display:none;
+}
+  
+#check{
+    z-index: 3;
+    display: none;
+}
+.content{
+  max-width: 90%;
+  margin: 60px 100px;
+  margin-top: 30vh;
+}
+.donorPage {
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(211, 209, 209, 0.6);
+    border-radius: 10px;
+}
+.donorPage h1{
+    position: relative;
+    display: block;
+    font-weight:bold;
+    font-style: 'bold';
+    
+    top: 20px;
+    font-size: 50px;
+    font-weight:500;
+    letter-spacing: 3px;
+    justify-content: center;
+    color: #000000;
+}
+.content .href-cont{
+    height: 100px;
+    justify-content: right;
+    direction: rtl;
+    padding-right: 2%;
+}
+.error-message:active{
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 40%;
+    height: 10vh;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    /* top: 10vh; */
+}
+  
+.error-message .error{
+    font-size: 5vh;
+}
+.content .composeEntry{
+    display: block;
+    color: #fff;
+    background: rgb(190, 3, 3);
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 20%;
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    transition-property: background;
+  
+  }
+
+/*-----------------------------------------------------TABLES---------------------------------*/
+
+table{
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 85vw;
+  height: 40vh;
+  overflow-x: auto;
+  overflow-y:auto;
+  margin-bottom: 30px;
+}
+
+thead a{
+  color:white;
+  font-size: 20px;
+  font-weight: 10px;
+  text-decoration: none;
+
+  transition: 0.1s;
+  font-family: poppins;
+}
+
+#table-header:hover{
+color: #7A95FF;
+}
+
+tbody{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 10vh;
+}
+
+.userTables tr th, .dashboardTable-needer tr th, .dashboardTable-user tr th{
+  background-color: #9b0a00;
+  padding: 15px;
+}
+.userTables tr td, .dashboardTable-needer tr td, .dashboardTable-user tr td{
+
+  font-size: 15px;
+  font-family: Arial;
+  justify-items: center;
+
+}
+.userTables tbody tr , .dashboardTable-needer tbody tr,.dashboardTable-user tbody tr{
+  border-bottom: 2px solid #000000;
+}
+
+.userTables tbody tr:nth-of-type(even), .dashboardTable-needer tbody tr:nth-of-type(even),.dashboardTable-user tbody tr:nth-of-type(even){
+  background-color: rgb(211, 209, 209);
+}
+
+.userTables tbody tr:last-of-type, .dashboardTable-needer tbody tr:last-of-type, .dashboardTable-user tbody tr:last-of-type{
+  border-bottom: 2px solid #bb1600;
+}
+
+.table-edit, .table-see-details{
+    background-color: #6fc5ff;
+    border-radius: 5px;
+    padding-left: 13px;
+    padding-bottom: 5px;
+    padding-right: 13px;
+    padding-top: 5px;
+    color: black;
+    border: 2px solid rgb(0, 81, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.table-delete{
+    background-color: #fa2c2c;
+    border-radius: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+    border: 2px solid rgb(114, 0, 0);
+    font-size: 20px;
+    position: relative;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/*----------------------------------------responsive table---------------------------------------------------*/
+@media screen and (max-width: 600px){
+  thead{
+    display: none;
+  }
+
+  td{
+    padding-left: 10px;  
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+  }
+
+  td:first-child{
+    background-color: #9b0a00;
+    color: #fff;
+    text-align: center;
+  }
+  
+  td:nth-child(2)::before{
+    content: "Blood Type";
+  }
+
+  td:nth-child(3)::before{
+    content: "City";
+  }
+
+  td:nth-child(4)::before{
+    content: "Region";
+  }
+  td{
+    text-align: right;
+  }
+
+  td::before{
+    float: left;
+    margin-right: 3rem;
+    font-weight: bold;
+  }
+}
